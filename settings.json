@@ -1,0 +1,15 @@
+{
+  "workbench.colorTheme": "Monokai Pro",
+  "editor.tabSize": 2,
+  "files.autoSave": "onFocusChange",
+  "editor.defaultFormatter": "esbenp.prettier-vscode",
+  "editor.formatOnSave": true,
+  "prettier.singleQuote": true,
+  "prettier.jsxSingleQuote": true,
+  "workbench.startupEditor": "none",
+  "editor.minimap.enabled": false,
+  "workbench.iconTheme": "Monokai Pro Icons"
+  // "[ruby]": {
+  //   "editor.defaultFormatter": "misogi.ruby-rubocop"
+  // }
+}
