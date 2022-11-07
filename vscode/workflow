@@ -1,0 +1,6 @@
+*rubocop - linting + autocorrect - ruby (auto)
+*prettier - linting + autocorrect - javascript and others (auto)
+
+pseudocode
+*rspec - TDD
+*pry-byebug
