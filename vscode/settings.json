@@ -9,7 +9,11 @@
   "[ruby]": {
     "editor.defaultFormatter": "misogi.ruby-rubocop"
   },
+  // "ruby.lint": {
+  //   "rubocop": true
+  // },
   "editor.formatOnSave": true,
   "editor.minimap.enabled": false,
-  "files.autoSave": "onFocusChange"
+  "files.autoSave": "onFocusChange",
+  "workbench.editor.revealIfOpen": true
 }
