@@ -109,4 +109,27 @@ down: Moves the stack frame down. Takes an optional numeric argument to move mul
 frame: Moves to a specific frame. Called without arguments will show the current frame.
 
 
+Ruby Testing:
+gem install rspec
+rspec --version
 
+Finally, cd into a project directory that you wish to configure for use with RSpec and type rspec --init to initialize RSpec within the project. This will generate two files, .rspec and spec/spec_helper.rb, such that your project might look like:
+
+project
+  |__lib
+  |   |__script.rb
+  |
+  |__spec
+  |   |__spec_helper.rb
+  |
+  |__.rspec
+  
+  Rails:
+  gem install rails
+  rails -v
+  
+  npm install --global yarn
+  yarn --version
+  
+  
+  
