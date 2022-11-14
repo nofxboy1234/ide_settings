@@ -1,0 +1,21 @@
+Do the below after deleting all .git file/dirs in local repo
+---------------------------
+https://stackoverflow.com/questions/39471072/how-to-create-a-local-push-destination-on-a-hard-disk-using-git
+
+Go to the folder you want to have your remote in
+
+$ cd /path/to/my-remote
+Create a bare repository there via git init
+
+$ git init --bare
+Go to the repository you want to work in and add a new remote pointing to the previously created repository via git remote add
+
+$ git remote add <name-of-remote> /path/to/my-remote
+After these steps you should be able to push to your new remote <name-of-remote>
+
+$ git push -u <name-of-remote> master
+Where -u is used to set the upstream of your branch, only needed the first time you push.
+---------------------------
+Run the following on local branch and remote (ext hdd) branch before pushing to new origin:
+git branch -M main
+git lfs install
