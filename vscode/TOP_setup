@@ -1,0 +1,112 @@
+Google Chrome:
+wget https://dl.google.com/linux/direct/google-chrome-stable_current_amd64.deb
+sudo apt install ./google-chrome-stable_current_amd64.deb
+rm google-chrome-stable_current_amd64.deb
+
+VSCode:
+wget -O code-latest.deb 'https://code.visualstudio.com/sha/download?build=stable&os=linux-deb-x64'
+sudo apt install ./code-latest.deb
+rm code-latest.deb
+
+Git and Github:
+sudo apt update
+sudo apt upgrade
+
+sudo add-apt-repository ppa:git-core/ppa
+sudo apt update
+sudo apt install git
+
+git --version
+
+git config --global user.name "Your Name"
+git config --global user.email "yourname@example.com"
+
+git config --global init.defaultBranch main
+git config --global color.ui auto
+git config --global pull.rebase false
+git config --get user.name
+git config --get user.email
+
+ls ~/.ssh/id_ed25519.pub
+ssh-keygen -t ed25519 -C <youremail>
+cat ~/.ssh/id_ed25519.pub
+
+git config --global core.editor "code --wait"
+
+$ git config --global alias.co checkout
+$ git config --global alias.br branch
+$ git config --global alias.ci commit
+$ git config --global alias.st status
+
+Node.Js
+sudo apt install curl
+sudo apt update && sudo apt upgrade
+curl -o- https://raw.githubusercontent.com/nvm-sh/nvm/v0.39.1/install.sh | bash
+
+export NVM_DIR="$([ -z "${XDG_CONFIG_HOME-}" ] && printf %s "${HOME}/.nvm" || printf %s "${XDG_CONFIG_HOME}/nvm")"
+[ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh" # This loads nvm
+
+command -v nvm
+
+nvm install --lts
+nvm use --lts
+node -v
+node
+
+Ruby:
+sudo apt update
+sudo apt upgrade
+
+sudo apt install gcc make libssl-dev libreadline-dev zlib1g-dev libsqlite3-dev
+git clone https://github.com/rbenv/rbenv.git ~/.rbenv
+
+echo 'export PATH="$HOME/.rbenv/bin:$PATH"' >> ~/.bashrc
+echo 'eval "$(rbenv init -)"' >> ~/.bashrc
+exit
+
+mkdir -p "$(rbenv root)"/plugins
+git clone https://github.com/rbenv/ruby-build.git "$(rbenv root)"/plugins/ruby-build
+
+rbenv -v
+rbenv install 3.1.2 --verbose
+
+You may get this error message:
+-------------------
+ruby-build: definition not found: x.x.x
+See all available versions with `rbenv install --list'.
+If the version you need is missing, try upgrading ruby-build:
+  git -C /home/itorja/.rbenv/plugins/ruby-build pull
+-------------------
+If so, we run the suggested command:
+
+git -C "$(rbenv root)"/plugins/ruby-build pull
+-------------------
+
+rbenv global 3.1.2
+ruby -v
+
+Ruby Debugging:
+To use Pry-byebug, you’ll first need to install it in your terminal by running gem install pry-byebug. You can then make it available in your program by requiring it at the top of your file with require 'pry-byebug'. Finally, to use Pry-byebug, you just need to call binding.pry at any point in your program.
+
+Step-by-step debugging
+break: Manage breakpoints.
+
+step: Step execution into the next line or method. Takes an optional numeric argument to step multiple times.
+
+next: Step over to the next line within the same frame. Also takes an optional numeric argument to step multiple lines.
+
+finish: Execute until current stack frame returns.
+
+continue: Continue program execution and end the Pry session.
+
+Callstack navigation
+backtrace: Shows the current stack. You can use the numbers on the left side with the frame command to navigate the stack.
+
+up: Moves the stack frame up. Takes an optional numeric argument to move multiple frames.
+
+down: Moves the stack frame down. Takes an optional numeric argument to move multiple frames.
+
+frame: Moves to a specific frame. Called without arguments will show the current frame.
+
+
+
