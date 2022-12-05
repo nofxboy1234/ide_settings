@@ -1,143 +1,64 @@
-Windows update
-
-Nvidia graphics driver update
-FloTP
-	Unreal Engine
-		*Jetbrains Rider
-			*Logic Driver Pro
-			*DragonIK
-
-			Darker Nodes
-			Electronic Nodes
 ######################################
-
-
-
-FloodThePalaces Setup:
-- UE 4.26.1
-Microsoft Visual Studio Community 2019
-	- MSBuild
-	- .NET Framework 4.5 targeting pack
-	- .NET Framework 4.6.2 targeting pack
-	- .NET Framework 4.8 SDK
-	- .NET Framework 4.8 targeting pack
-- Rider for Unreal 2020.3.4
-
-
-######################################
-When starting a new UE project:
-	# Open .sln with Rider
-	# Let Rider install RiderLink into Engine 
-	# 	(happens once e.g. "Engine/Plugins/Developer/RiderLink")
-	# In UE4Editor, activate RiderLink plugin
-	# Check that there's 2 Rider* plugins
-	# Set Rider as Source editor
-
-# To make sure project is fresh
-Delete:
-	.idea
-	.vs
-	Binaries
-	Intermediate
-	.sln
-	# ~Saved
-	# ~Build
-Rt click .uproject -> Generate Visual Studio Project Files
-Open Rider -> Open project .sln
-Clean Project
-Build Project
-Close Rider -> Open project .sln
-
-Open UE4 from Rider
-Make code change
-Build Project->UE4 Hot Reloads (with sound)
-######################################
-
-
-
-
-
-
-######################################
-Rider Shortcuts:
-
-shift+shift
-alt+enter
-
-toggle zen mode: alt+z
-
-Rider panel shortcuts:
-Alt+0: Build
-Alt+1: Explorer
-Alt+2: TODO
-Alt+3: Find
-Alt+4: Commit
-Alt+8: Unreal
-Alt+9: Git
-show text editor window(code): esc
-
 open any symbol: shift+shift
 quick actions/refactoring: alt+enter
 
-Alt+Y: Navigate to class
-toggle between header and code: alt+o
-goto declaration/definition: (alt+`, enter)
-bookmarks: ctrl+k+k, ctrl+`
+Rider Shortcuts:
+Rider panel shortcuts:
+alt+0: Build
+ctrl+alt+L: Explorer
+Alt+9: Git
+show text editor window(code): esc
 
-Navigate file member: alt+m
-(alt+m again to Include members from related files):
-This lists base class symbols.
+toggle between header and code: alt+o
+goto declaration/definition: (alt+`, enter) /  f12
+
+Navigate file member: alt+\
+(alt+\ again to Include members from related files): This lists base class symbols.
 If you type a word that matches part of a base class symbol, it also
 shows, even when this is unticked. 
 
-alt+home: Go to Super method/class
-
-go back/forward: alt+left
-				 alt+right
+go back/forward: alt+left, alt+right
 
 rename: ctrl+r,r
 
 autocomplete: ctrl+space
+show parameters: ctrl+shift+space
 
-show arguments in brackets: ctrl+shift+space
-
-Select function signature: ctrl+shift+space||p
-
-Delete line: ctrl+shift+l
+Delete line: ctrl+l
 
 close tab: ctrl+f4
 
-alt+up: previous method
-alt+down: next method
+move line up: alt+up
+move line down: alt+down
+
+
+alt+shift+up: previous method
+alt+shift+down: next method
 
 toggle comment line: ctrl+/
 
+goto super method: alt+/
+
 Show quick documentation: alt+q
-Show error tooltip/info: ctrl+7
+Show error tooltip/info: alt+t
 
 alt+pg up/down: go to next/prev err
 
-Insert line before: ctrl+enter
-Insert line after: shift+enter
+start new line before: ctrl+alt+enter
+start new line after: ctrl+enter
 Complete Statement: ctrl+shift+enter (e.g. Put ; at end of line)
-
 
 Navigate, Type Hierarchy: Ctrl+E, H
 
-move line up: ctrl+shift+up
-move line down: ctrl+shift+down
-
-
-Navigate to:
-	Derived Symbols: alt+G
-	Show Usages of Symbol: alt+H (usages shown in dropdown)
-	Find Usages of Symbol: shift+f12 (list usages in panel)
-	Type of Symbol: alt+t
-
-
-
-
 ********************************************
+Clean project: ctrl+shift+f6
+Build project: ctrl+shift+f7
+Run UE4 without debug: ctrl+f5
+********************************************
+
+
+
+
 
 ********************************************
 UE4 tips:
@@ -186,16 +107,7 @@ If adding a variable to a c++ class -> UE seems to refresh it automatically
 Changing values in constuctor methods, or at initialization in header file, crashes UE editor,
 so close Editor if doing this.
 
-********************************************
-Clean project: ctrl+shift+f6
-Build project: ctrl+shift+f7
-Run UE4 without debug: ctrl+f5
 
-# Play game: ctrl+p
-# Stop game: ctrl+i
-Stop UE4 without debug: shift+f5
-
-********************************************
 
 
 
