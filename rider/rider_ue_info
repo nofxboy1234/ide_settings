@@ -1,55 +1,35 @@
 ######################################
 open any symbol: shift+shift
 quick actions/refactoring: alt+enter
-
-Rider Shortcuts:
-Rider panel shortcuts:
 alt+0: Build
 ctrl+alt+L: Explorer
 Alt+9: Git
 show text editor window(code): esc
-
 toggle between header and code: alt+o
 goto declaration/definition: (alt+`, enter) /  f12
-
-Navigate file member: alt+\
+Navigate file members: alt+\
 (alt+\ again to Include members from related files): This lists base class symbols.
 If you type a word that matches part of a base class symbol, it also
 shows, even when this is unticked. 
-
 go back/forward: alt+left, alt+right
-
+go to type of symbol: ctrl+shift+f11
 rename: ctrl+r,r
-
 autocomplete: ctrl+space
 show parameters: ctrl+shift+space
-
 Delete line: ctrl+l
-
 close tab: ctrl+f4
-
 move line up: alt+up
 move line down: alt+down
-
-
 alt+shift+up: previous method
 alt+shift+down: next method
-
 toggle comment line: ctrl+/
-
-goto super method: alt+/
-
 Show quick documentation: alt+q
 Show error tooltip/info: alt+t
-
 alt+pg up/down: go to next/prev err
-
 start new line before: ctrl+alt+enter
 start new line after: ctrl+enter
 Complete Statement: ctrl+shift+enter (e.g. Put ; at end of line)
-
 Navigate, Type Hierarchy: Ctrl+E, H
-
 ********************************************
 Clean project: ctrl+shift+f6
 Build project: ctrl+shift+f7
